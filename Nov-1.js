@@ -139,7 +139,7 @@ console.log(onlyLetters);
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
-const isThisAnEmail = function (mail) {
+const isThisAnEmail = function(mail) {
  if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.isThisAnEmail.value))
   {
     return (true)
