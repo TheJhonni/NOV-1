@@ -24,19 +24,6 @@ console.log(sum);
 
 console.log("--------EXERCISE N.3--------\n")
 
-/*
-let money;
-
-let random = function(n) {
-  for (let i=0; i<=n; i++) {
-    n.push(Math.floor((Math.random() * 20)));
-}
-return n;
-}
-
-console.log(random);
-*/
-
 let random = [];
 while(random.length < 20){
     let r = Math.floor(Math.random() * 20) + 1;
@@ -141,6 +128,12 @@ console.log(deleteOne("Hello!", isABoolean));
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
  
+let onlyLettersString = "Yesterday was the 31"
+const onlyLetters = function(onlyLettersString) {
+  delete onlyLettersString.number()
+  return onlyLettersString
+};
+console.log(onlyLetters);
 
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
@@ -240,9 +233,6 @@ for (i=0;i<=0;i++) {
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
 
-const countMovies = function(n) {
-
-}
 
 /* EXERCISE 14
     Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
@@ -329,7 +319,7 @@ for (let i = 0; i < 6; i++) {
   *****
 */
 
-const tree = function(n) {
+const tree = function() {
   for (let i=1; i<10; i += 2)
   {
       for (let k=0; k < (4 - i / 2); k++)
@@ -354,6 +344,8 @@ const tree = function(n) {
 */
 
 /* This movies array is used throughout the exercises. You're not supposed to alter it. */
+
+/*
 const movies = [
     {
       Title: "The Lord of the Rings: The Fellowship of the Ring",
@@ -468,3 +460,5 @@ const movies = [
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ];
+
+*/
