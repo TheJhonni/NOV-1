@@ -265,29 +265,30 @@ const onlyInThisMillennium = function () {
     Write a function called getMovieById which receives an id as a parameter and returns the movie with the given id from the provided movies array.
 */
 
+/*
 const getMovieById = function (id) {
   let id = (Year, imdbID, Type, Poster)
   while (id = Year) {
-    console.log(movie + (getMovieById(Year)),
-  }
+    console.log(movie + (getMovieById(Year)) }
   while (id = imdbID) {
-    console.log(movie + (getMovieById(imdbID)),
-  }
+    console.log(movie + (getMovieById(imdbID))}
   while (id = Type) {
-    console.log(movie + (getMovieById(Type)),
-  }
+    console.log(movie + (getMovieById(Type))}
   while (id = Poster) {
-    console.log(movie + (getMovieById(Poster)),
-  };
-}
+    console.log(movie + (getMovieById(Poster))
+};
+*/
 
 /* EXERCISE 17
     Write a function called sumAllTheYears which returns the sum of all the years in which the movies in the provided movies array have been produced.
 */
 
+
 /* EXERCISE 18
     Write a function called searchByTitle which receives a string as a parameter and returns all the movies in the provided movies array which contain that string in the title.
 */
+
+
 
 /* EXERCISE 19
     Write a function called searchAndDivide which receives a string as a parameter and returns an object;
@@ -309,6 +310,15 @@ const getMovieById = function (id) {
   **
   ***
 */
+const halfTree = function(n) {
+for (let i = 0; i < 6; i++) {
+  for (let j = 0; j < i; j++) {
+      System.out.print("*");
+  }
+  System.out.println("");
+};
+
+
 
 /* EXERCISE 22 
   Create a function called "tree" which receives a number as a parameter and builds an "*" tree with the given height.
@@ -318,6 +328,22 @@ const getMovieById = function (id) {
    *** 
   *****
 */
+
+const tree = function(n) {
+  for (let i=1; i<10; i += 2)
+  {
+      for (let k=0; k < (4 - i / 2); k++)
+      {
+          System.out.print(" ");
+      }
+      for (let j=0; j<i; j++)
+      {
+          System.out.print("*");
+      }
+      System.out.println("");
+  }
+  };
+
 
 /* EXERCISE 23
   Create a function called "isItPrime" that receives a number as a parameter and returns true if the given number is a prime number.
