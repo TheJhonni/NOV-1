@@ -24,7 +24,7 @@ console.log(sum);
 
 console.log("--------EXERCISE N.3--------\n")
 
-
+/*
 let money;
 
 let random = function(n) {
@@ -34,6 +34,14 @@ let random = function(n) {
 return n;
 }
 
+console.log(random);
+*/
+
+let random = [];
+while(random.length < 20){
+    let r = Math.floor(Math.random() * 20) + 1;
+    if(random.indexOf(r) === -1) random.push(r);
+}
 console.log(random);
 
 /* EXERCISE D
@@ -77,33 +85,98 @@ console.log(me);
 /* EXERCISE 1
     Write a function called dice; it should randomize an integer number between 1 and 6.
 */
+console.log("--------EXERCISE N.8--------\n")
+
+function dice(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+console.log("Random Number between 1 and 6: " + dice(1, 6));
+
 
 /* EXERCISE 2
     Write a function called whoIsBigger which receives 2 numbers as parameters and returns the biggest one.
 */
+
+console.log("--------EXERCISE N.9--------\n")
+
+const whoIsBigger = function(x, y) {
+  if (x > y) {
+    return x;
+  } else {
+    return y
+  }
+};
+console.log(whoIsBigger(6, 8));
 
 /* EXERCISE 3
     Write a function called splitMe which receives a string as a parameter and returns an array with every word in that string.
     Ex.: splitMe("I love coding") => returns ["I", "Love", "Coding"]
 */
 
+console.log("\n--------EXERCISE N.9--------\n")
+
+  let str = "I love coding";
+  const splitMe = str.split(' ');
+  console.log(splitMe);
+
 /* EXERCISE 4
     Write a function called deleteOne which receives a string and a boolean as parameters.
     If the boolean value is true it should return the string without the first letter, otherwise it should remove the last one from it.
 */
+
+console.log("\n--------EXERCISE N.10--------\n")
+
+let isABoolean = true;
+const deleteOne = function(str, isABoolean) {
+  if (isABoolean = true) {
+    return str.split[0];
+} else {
+  return str.substring(0,str.length-1);
+};
+}
+console.log(deleteOne("Hello!", isABoolean));
 
 /* EXERCISE 5
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
 
+const onlyLetters = function(str) {
+  if 
+}
+
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
 */
 
+const isThisAnEmail = function (mail) {
+ if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.isThisAnEmail.value))
+  {
+    return (true)
+  }
+    alert("You have entered an invalid email address!")
+    return (false)
+}
+
 /* EXERCISE 7
    Write a function called whatDayIsIt that should return the current day of the week.
 */
+
+const whatDayIsIt = new Array(7);
+weekDAY[1] = 'Sunday' ; 
+weekDAY[2] = 'Monday';
+weekDAY[3] = 'Tuesday';
+weekDAY[4] = 'Wednesday';
+weekDAY[5] = 'Thursday';
+weekDAY[6] = 'Friday';
+weekDAY[7] = 'Saturday';
+
+function returnDay(x) {
+  return (x < 1) || (x > 7) ? null :
+  } else { 
+    let thisDay = weekDAY[x]
+    return thisDay; 
+  };
 
 /* EXERCISE 8
     Write a function called rollTheDices which receives a number as a parameter.
