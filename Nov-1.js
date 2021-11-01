@@ -233,10 +233,26 @@ for (i=0;i<=0;i++) {
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
 
+const countMovies = function() {
+  let movies = ["The Lord of the Rings: The Fellowship of the Ring", "The Lord of the Rings: The Return of the King",
+  "The Lord of the Rings: The Two Towers",
+   "Lord of War", "Lords of Dogtown", "The Lord of the Rings",
+  "Lord of the Flies", "The Lords of Salem",
+  "Greystoke: The Legend of Tarzan, Lord of the Apes",
+   "Lord of the Flies", "The Avengers",
+  "Avengers: Infinity War", "Avengers: Age of Ultron", "Avengers: Endgame",];
+  let count = movies.length;
+  document.getElementById("demo").innerHTML = count;
+};
 
 /* EXERCISE 14
     Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
 */
+
+const onlyTheTitles = function() {
+  let array = movies.titles
+};
+console.log(onlyTheTitles(array));
 
 /* EXERCISE 15
    Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
