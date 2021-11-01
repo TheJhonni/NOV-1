@@ -217,14 +217,32 @@ const isTodayMyBirthday = function(number, numberMonth) {
    Write a function called deleteProp which receives an object and a string as parameters,
    and returns the given object after deleting its property named as the given string.
 */
+const deleteProp = function() {
+  delete movies.Year;
+  return movies
+};
 
 /* EXERCISE 12
     Write a function called oldestMovie which finds the oldest movie in the provided movies array.
 */
 
+const oldestMovie = function() {
+let num = Number(Year);
+highest = num;
+for (i=0;i<=0;i++) {
+        if (num[i]>highest) {
+                highest = num[i]
+        }
+}
+};
+
 /* EXERCISE 13
     Write a function called countMovies which returns the number of movies contained in the provided movies array.
 */
+
+const countMovies = function(n) {
+
+}
 
 /* EXERCISE 14
     Write a function called onlyTheTitles which creates an array with just the titles of the movies contained in the provided movies array.
@@ -234,9 +252,34 @@ const isTodayMyBirthday = function(number, numberMonth) {
    Write a function called onlyInThisMillennium which returns only the movies produced in this millennium from the provided movies array.
 */
 
+const onlyInThisMillennium = function () {
+  let num = Number(Year);
+  if (num >= 2000 && num <= 3000 ) {
+    return num
+  } else {
+    return "Not in this millennium"
+  }
+};
+
 /* EXERCISE 16 
     Write a function called getMovieById which receives an id as a parameter and returns the movie with the given id from the provided movies array.
 */
+
+const getMovieById = function (id) {
+  let id = (Year, imdbID, Type, Poster)
+  while (id = Year) {
+    console.log(movie + (getMovieById(Year)),
+  }
+  while (id = imdbID) {
+    console.log(movie + (getMovieById(imdbID)),
+  }
+  while (id = Type) {
+    console.log(movie + (getMovieById(Type)),
+  }
+  while (id = Poster) {
+    console.log(movie + (getMovieById(Poster)),
+  };
+}
 
 /* EXERCISE 17
     Write a function called sumAllTheYears which returns the sum of all the years in which the movies in the provided movies array have been produced.
