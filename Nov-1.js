@@ -140,10 +140,7 @@ console.log(deleteOne("Hello!", isABoolean));
    Write a function called onlyLetters which receives a string as a parameter and returns it removing all the digits.
    Ex.: onlyLetters("I have 4 dogs") => returns "I have  dogs"
 */
-
-const onlyLetters = function(str) {
-  if 
-}
+ 
 
 /* EXERCISE 6
    Write a function called isThisAnEmail which receives a string as a parameter and returns true if the string is a valid email address.
@@ -172,10 +169,7 @@ weekDAY[6] = 'Friday';
 weekDAY[7] = 'Saturday';
 
 function returnDay(x) {
-  return (x < 1) || (x > 7) ? null :
-  } else { 
-    let thisDay = weekDAY[x]
-    return thisDay; 
+  return (x < 1) || (x > 7) ? null : whatDayIsIt = weekDAY[x]
   };
 
 /* EXERCISE 8
@@ -192,10 +186,29 @@ function returnDay(x) {
 /* EXERCISE 9
    Write a function called howManyDays which receives a date as a parameter and returns the number of days passed since that date.
 */
+function howManyDays(d) {
+  let year = (d.getFullYear() < 10) ? "0" + (d.getFullYear() + 1) : (d.getFullYear() + 1);
+  let month = (d.getMonth() < 10) ? "0" + (d.getMonth() + 1) : (d.getMonth() + 1);
+  let day = (d.getDate() < 10) ? "0" + d.getMonth() : d.getMonth();
+
+  return day + d.getDate() + "." + month + "." + d.getMonth() + year + d.getFullYear;
+}
+
+console.log(howManyDays(new Date()));
+
+
 
 /* EXERCISE 10
    Write a function called isTodayMyBirthday which should return true if today's your birthday, false otherwise.
 */
+
+const isTodayMyBirthday = function(number, numberMonth) {
+  if (Number === 02 && numberMonth === 10) {
+    return true
+  } else {
+    return false
+  };
+}
 
 // JS Arrays & Objects
 // NOTE: the movies array used in some exercises is defined at the end of this file
